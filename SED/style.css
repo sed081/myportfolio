@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
-
+/* RESET + BASE */
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +14,14 @@ body, html {
   color: #d3d3d3;
 }
 
+/* UTILITIES */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
 
+/* NAVBAR */
 .navbar {
   position: fixed;
   top: 0;
@@ -27,7 +34,7 @@ body, html {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #222;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
 }
 
 .logo {
@@ -66,7 +73,7 @@ body, html {
   color: #ffffff;
 }
 
-
+/* HERO */
 .hero {
   background: linear-gradient(to right, #0a0a0a, #1a1a1a);
   min-height: 100vh;
@@ -88,7 +95,7 @@ body, html {
   color: #999999;
 }
 
-
+/* BUTTONS */
 button {
   padding: 0.8rem 1.5rem;
   font-size: 1rem;
@@ -105,7 +112,7 @@ button:hover {
   transform: scale(1.05);
 }
 
-
+/* SECTIONS */
 .section {
   min-height: 100vh;
   padding: 120px 2rem 4rem;
@@ -134,7 +141,7 @@ button:hover {
   color: #999;
 }
 
-
+/* FOOTER */
 .footer {
   padding: 1rem;
   background: #0a0a0a;
@@ -143,7 +150,7 @@ button:hover {
   border-top: 1px solid #1a1a1a;
 }
 
-
+/* BACK TO TOP */
 #backToTop {
   position: fixed;
   bottom: 40px;
@@ -155,7 +162,7 @@ button:hover {
   background-color: #1f1f1f;
   color: #f0f0f0;
   cursor: pointer;
-  box-shadow: 0 0 5px rgba(0,0,0,0.4);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
   display: none;
   z-index: 1001;
   transition: opacity 0.3s ease;
@@ -165,6 +172,7 @@ button:hover {
   background-color: #333;
 }
 
+/* SCROLLABLE GALLERY */
 .pc-gallery,
 .video-gallery {
   display: flex;
@@ -174,7 +182,6 @@ button:hover {
   gap: 2rem;
   padding: 2rem 1rem;
   scroll-behavior: smooth;
-  height: auto;
 }
 
 .pc-gallery::-webkit-scrollbar,
@@ -195,7 +202,6 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-sizing: border-box;
   transition: transform 0.3s ease;
 }
 
@@ -213,23 +219,7 @@ button:hover {
   margin-bottom: 1rem;
 }
 
-
-
-.pc-item:hover,
-.video-card:hover {
-  transform: scale(1.03);
-}
-
-.pc-item img,
-.video-card video {
-  width: 100%;
-  height: 280px;
-  object-fit: cover;
-  border-radius: 6px;
-  margin-bottom: 1rem;
-}
-
-
+/* TEXT IN CARDS */
 .spec-list,
 .video-card p {
   font-size: 0.95rem;
@@ -238,17 +228,7 @@ button:hover {
   width: 100%;
 }
 
-
-@media (max-width: 768px) {
-  .pc-item,
-  .video-card {
-    flex: 0 0 90vw;
-    max-width: 90vw;
-  }
-}
-
-
-
+/* CONTACT SECTION */
 .contact-list {
   list-style: none;
   padding: 0;
@@ -271,7 +251,7 @@ button:hover {
   text-decoration: underline;
 }
 
-
+/* PROGRAMMING SKILLS */
 .skills-list {
   list-style: none;
   padding: 0;
@@ -286,7 +266,7 @@ button:hover {
   margin-bottom: 1rem;
 }
 
-
+/* SECTION ANIMATIONS */
 .section,
 .hero {
   opacity: 0;
@@ -300,7 +280,7 @@ button:hover {
   transform: translateY(0);
 }
 
-
+/* RESPONSIVE BREAKPOINTS */
 @media (max-width: 768px) {
   .nav-links {
     flex-direction: column;
