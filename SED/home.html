@@ -8,27 +8,29 @@
 </head>
 <body>
 
+  <nav class="navbar">
+    <div class="logo">
+      <span id="typing-text"></span><span class="cursor">|</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#PC-BUILDS">PC BUILDS</a></li>
+      <li><a href="#video-editing">VIDEO EDITS</a></li>
+      <li><a href="#programming">PROGRAMMING</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+  </nav>
+
   <header class="hero">
-    <nav class="navbar">
-      <div class="logo">Sed Works</div>
-      <ul class="nav-links">
-        <li><a href="#PC-BUILDS">PC BUILDS</a></li>
-        <li><a href="#video-editing">VIDEO EDITS</a></li>
-        <li><a href="#programming">PROGRAMMING</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-    </nav>
     <div class="hero-content">
       <h1>Welcome, and thanks for stopping by!</h1>
-      <p>I'm thrilled to have you here. This is my personal portfolio a curated space where creativity, passion, and professionalism come together...</p>
+      <p>I'm thrilled to have you here. This is my personal portfolio...</p>
       <button id="learnMoreBtn">Learn More</button>
     </div>
   </header>
 
   <section id="PC-BUILDS" class="section">
-    <h2>💻 PC Builds</h2>
-  
+    <h2>PC Builds</h2>
     <div class="pc-gallery">
       <div class="pc-item">
         <img src="PCBUILDS/SAGAR SURI.jpg" alt="Build 1">
@@ -39,7 +41,6 @@
           <li><strong>Storage:</strong> 1TB SSD</li>
         </ul>
       </div>
-  
       <div class="pc-item">
         <img src="PCBUILDS/SAGAR SURI.jpg" alt="Build 1">
         <ul class="spec-list">
@@ -49,15 +50,23 @@
           <li><strong>Storage:</strong> 2TB SSD</li>
         </ul>
       </div>
-      
+      <div class="pc-item">
+        <img src="PCBUILDS/SAGAR SURI.jpg" alt="Build 1">
+        <ul class="spec-list">
+          <li><strong>CPU:</strong> Ryzen 9 7950X</li>
+          <li><strong>GPU:</strong> RTX 4080</li>
+          <li><strong>RAM:</strong> 64GB DDR5</li>
+          <li><strong>Storage:</strong> 2TB NVMe</li>
+        </ul>
+      </div>
     </div>
+<button class="scroll-left" onclick="scrollGallery('left')">←</button>
+<button class="scroll-right" onclick="scrollGallery('right')">→</button>
   </section>
-    
 
   <section id="video-editing" class="section">
-    <h2>🎬 Video Editing</h2>
+    <h2>Video Editing</h2>
     <div class="video-gallery">
-  
       <div class="video-card">
         <video controls>
           <source src="VIDEOEDITS/GAMING PC.mov" type="video/mp4">
@@ -65,18 +74,24 @@
         </video>
         <p><strong>Montage Project</strong><br>Quick cuts, transitions, and music-synced edit.</p>
       </div>
-  
       <div class="video-card">
         <video controls>
-          <source src="VIDEOEDITS/SUPRA NA BLUE.mp4" type="video/mp4">
+          <source src="VIDEOEDITS/GAMING PC.mov" type="video/mp4">
           Your browser does not support the video tag.
         </video>
         <p><strong>Color Grading Showcase</strong><br>Cinematic grading examples.</p>
       </div>
-      
+      <div class="video-card">
+        <video controls>
+          <source src="VIDEOEDITS/GAMING PC.mov" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p><strong>Slow Motion Reel</strong><br>High frame-rate and ambient shots.</p>
+      </div>
     </div>
+<button class="scroll-left" onclick="scrollGallery('left')">←</button>
+<button class="scroll-right" onclick="scrollGallery('right')">→</button>
   </section>
-  
 
   <section id="programming" class="section dark">
     <h2>Programming</h2>
@@ -86,14 +101,13 @@
       <li><strong>Databases:</strong> MongoDB, MySQL, etc.</li>
       <li><strong>Tools:</strong> GitHub, VS Code, Python, Figma</li>
       <li><strong>Other:</strong>Responsive Design, Debugging, Performance Optimization</li>
-      <li><strong>My Portfolio:</strong> <a href="https://github.com/sed081" target="_blank">Github</a></li>
+      <li><strong>My Portfolio:</strong> <a href="https://github.com/sed081" target="_blank">GitHub</a></li>
     </ul>
   </section>
-  
 
   <section id="about" class="section dark">
     <h2>About</h2>
-    <p>This portfolio is created using modern HTML, CSS, and JavaScript with a clean responsive layout.</p>
+    <p>This portfolio is crafted using modern HTML, CSS, and JavaScript with a clean responsive layout.</p>
   </section>
 
   <section id="contact" class="section">
@@ -101,17 +115,15 @@
     <ul class="contact-list">
       <li><strong>Email:</strong> mina.rehnjosh.personal@gmail.com</li>
       <li><strong>Phone:</strong> 09459916431 / 09946725457</li>
-      <li><strong>GitHub:</strong> <a href="https://github.com/sed081" target="_blank">Github</a></li>
-      <li><strong>Linkedin:</strong> <a href="https://www.linkedin.com/in/rehnjosh-mina-6288a72ba/" target="_blank">Linkedin</a></li>
+      <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/rehnjosh-mina-6288a72ba/" target="_blank">LinkedIn</a></li>
     </ul>
   </section>
-  
 
   <footer class="footer">
     <p>Sed Works &copy; 2025. All rights reserved.</p>
   </footer>
-  <button id="backToTop" title="Back to Top">⬆</button>
 
+  <button id="backToTop" title="Back to Top">⬆</button>
   <script src="script.js"></script>
 </body>
 </html>
